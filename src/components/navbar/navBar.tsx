@@ -1,7 +1,10 @@
-import React from "react";
+import React, { FC } from "react";
 import logo from '../../assets/Images/teeth.png'
+import { NavbarProps } from "../../Interfaces/enum";
 import './navBarStyles.css'
-export const Navbar = () => {
+
+
+export const Navbar:FC<NavbarProps> = (props) => {
     return (
     <div className="nav">
     <div className="container">
@@ -9,10 +12,7 @@ export const Navbar = () => {
             <img src={logo} alt='logo' />
         </div>
         <ul className="li-container">
-            <li><a href="#Home"/>Home</li>
-            <li><a href="#About"/>About</li>
-            <li><a href="#Services"/>Services</li>
-            <li><a href="#Blog"/>Blog</li> 
+            {props.data?.map((item)=><li><a href={item?.href} children={item?.name}/></li>)}
         </ul>
        <div className="bckgr">
        <button className="contact-btn"><a href="/">Get Appointment</a></button>

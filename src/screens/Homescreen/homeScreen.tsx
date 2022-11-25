@@ -1,6 +1,7 @@
 import React from "react";
 import { HealthCare } from "../../components/healthcare/healthCare";
 import { Home } from "../../components/home/home";
+import { MedicalCare } from "../../components/medicalcare/medicalCare";
 import { Navbar } from "../../components/navbar/navBar";
 import { navData } from "../../data";
 import './homeScreenStyles.css'
@@ -21,5 +22,6 @@ export const HomeScreen = () => {
         leftSidedescription="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy"
         buttonText="Get Appointment"
         />
+        <MedicalCare />
     </div>
 } 

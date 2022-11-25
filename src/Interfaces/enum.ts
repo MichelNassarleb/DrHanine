@@ -7,3 +7,13 @@ export interface HomeProps{
     subtitle?:string;
     buttonText?:string
 }
+
+export interface HealthCareProps{
+    title?:string;
+    subtitle?:string;
+    buttonText?:string;
+    leftSideTitle?:string;
+    rightSideTitle?:string;
+    leftSidedescription?:string;
+    rightSidedescription?:string;
+}

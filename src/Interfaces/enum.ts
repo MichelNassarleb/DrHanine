@@ -17,3 +17,9 @@ export interface HealthCareProps{
     leftSidedescription?:string;
     rightSidedescription?:string;
 }
+
+export interface ReviewItemProps{
+    icon?:string;
+    quantity?:string;
+    text?:string
+}

@@ -8,7 +8,13 @@
     border-radius: 5px;
 }
 .meet-container{
-    padding-left: 20vw;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.meet-sec{
+    width: calc(50vw + 100px)
 }
 
 .meet-img-container{
@@ -55,20 +61,22 @@
     justify-content: space-evenly;
     width: 70%;
     border-radius: 500px;
-    padding: 5px 10px 5px 10px;
+    padding: 8px 10px 8px 10px;
 }
 .meet-text-container{
 display: flex;
 flex-direction: column;
 width: 100%;
 align-items: center;
-gap: 0px;
+
+gap: 10px;
 }
 
 .meet-icon-container svg{
     cursor: pointer;
     color: var(--grey);
     transition: 0.5s all ease;
+    font-size: 15px;
 }
 .meet-icon-container svg:hover{
     color: var(--darkGrey);

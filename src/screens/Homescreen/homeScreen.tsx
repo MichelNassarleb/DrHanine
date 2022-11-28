@@ -4,6 +4,7 @@ import { Home } from "../../components/home/home";
 import { MedicalCare } from "../../components/medicalcare/medicalCare";
 import { Meet } from "../../components/meet/meet";
 import { Navbar } from "../../components/navbar/navBar";
+import { Review } from "../../components/reviews/review";
 import { navData } from "../../data";
 import './homeScreenStyles.css'
 export const HomeScreen = () => {
@@ -25,5 +26,6 @@ export const HomeScreen = () => {
         />
         <MedicalCare />
         <Meet />
+        <Review />
     </div>
 } 

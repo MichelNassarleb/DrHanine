@@ -1,0 +1,45 @@
+.review-container{
+    background-color: var(--darkGrey);
+padding:10px 10vw 10px 10vw;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;justify-content: center;
+}
+
+.review-item-container{
+    background-color: var(--grey);
+    width: 250px;
+    height: 250px;
+    padding-left: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.review-item-container svg{
+    color: var(--pink);
+    font-size: 100px;
+    margin: 0;
+    padding: 0;
+}
+.review-item-container h1,p{
+    color: white;
+}
+.review-blue-line{
+    height: 5px;
+    background-color: var(--pink);
+    width: 90%;
+
+}
+.review-item-container h1,p{
+    margin: 0;
+}
+
+.review-item-container h1{
+    font-size: 50px;
+}
+.review-item-container p{
+    font-size: 30px;
+}

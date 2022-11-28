@@ -7,6 +7,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import './meetStyles.css'
 export const Meet = () =>{
     return(<div className="meet-container">
+        <div className="meet-sec">
         <div className="meet-top-section">
         <h3>MEET OUR TEAM</h3>
         <h1>Meet Our Doctors</h1>
@@ -27,6 +28,7 @@ export const Meet = () =>{
         </div>
         </div>
             </div>
+        </div>
         </div>
     </div>)
 }

@@ -1,12 +1,11 @@
 .home-container{
-    margin-top: 15vh;
+
     background-color: var(--grey);
     height: 100vh;
     background: url('../../assets//Images/homeBackground.jpeg');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
-    ;
 }
 
 .home-container div h1,h3{

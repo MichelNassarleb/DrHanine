@@ -1,0 +1,75 @@
+.meet-item-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F8F8;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+.meet-container{
+    padding-left: 20vw;
+}
+
+.meet-img-container{
+    height: 400px;
+    width: 300px ;
+    overflow: hidden;
+}
+.meet-img-container img{
+    height: 100%;
+    width: 100%;
+}
+.meet-bottom-section{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 80px;
+    padding-bottom: 10vh;
+}
+
+
+.meet-top-section h3,h1{
+    color: var(--darkGrey);
+}
+.meet-top-section h3{
+    font-weight: 400;
+}
+.meet-top-section h1{
+    font-weight: 500;
+    font-size: 50px;
+}
+.meet-text-container h1{
+   font-weight: 500;
+   font-size: 20px;
+   margin-bottom: 0;
+}
+.meet-text-container p{
+    color: var(--darkGrey);
+}
+.meet-icon-container{
+    border: 1px solid var(--grey);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70%;
+    border-radius: 500px;
+    padding: 5px 10px 5px 10px;
+}
+.meet-text-container{
+display: flex;
+flex-direction: column;
+width: 100%;
+align-items: center;
+gap: 0px;
+}
+
+.meet-icon-container svg{
+    cursor: pointer;
+    color: var(--grey);
+    transition: 0.5s all ease;
+}
+.meet-icon-container svg:hover{
+    color: var(--darkGrey);
+}

@@ -1,5 +1,7 @@
 export interface NavbarProps {
-    data?: Array<{ href?: string, name?: string }>
+    data?: Array<{ href?: string, name?: string }>;
+    onChangeDimension?:any;
+    windowDimension?:number;
 }
 
 export interface HomeProps{

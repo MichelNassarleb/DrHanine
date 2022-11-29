@@ -75,9 +75,9 @@ gap: 10px;
 .meet-icon-container svg{
     cursor: pointer;
     color: var(--grey);
-    transition: 0.5s all ease;
+transition: 0.5s all ease;
     font-size: 15px;
 }
 .meet-icon-container svg:hover{
-    color: var(--darkGrey);
+    fill: var(--darkGrey);
 }

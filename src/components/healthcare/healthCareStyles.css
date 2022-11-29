@@ -24,9 +24,9 @@
 -moz-box-shadow: 0px 5px 11px 4px rgba(156,141,141,0.35);
 }
 .healthcare-img-container{
-    height: 300px;
+    height: 230px;
     width: 287px;
-    border-radius: 10px;
+    border-radius: 5px;
     border-width: none;
     overflow: hidden;
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { HealthCare } from "../../components/healthcare/healthCare";
 import { Home } from "../../components/home/home";
 import { MedicalCare } from "../../components/medicalcare/medicalCare";
@@ -8,9 +8,11 @@ import { Review } from "../../components/reviews/review";
 import { navData } from "../../data";
 import './homeScreenStyles.css'
 export const HomeScreen = () => {
+
+    const [windowDimension,setWindowDimension] = useState<number>(1)
     return <div className="main-container">
         
-        <Navbar data={navData}/>
+        <Navbar data={navData} windowDimension={windowDimension} onChangeDimension={setWindowDimension}/>
         <Home title="WE USE LATEST MEDICAL TECHNOLOGY"
         subtitle="LET US BRIGHTEN YOUR SMILE"
         buttonText="WHO WE ARE"

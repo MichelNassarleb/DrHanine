@@ -25,3 +25,11 @@ export interface ReviewItemProps{
     quantity?:string;
     text?:string
 }
+export interface ContactProps{
+    apikey:string,
+    onClickMap:(lat:number,lng:number)=>void,
+    onSubmit?:()=>void,
+    setFullName?:any;
+    setEmail?:any;
+    setMessage?:any;
+}

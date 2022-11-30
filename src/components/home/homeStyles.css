@@ -26,7 +26,11 @@
 }
 .home-container div h1{
     font-size: 50px;
-    width: 30%;
+    width: 100%;
+    margin: 0;
+}
+.home-container div h1:nth-child(3){
+margin-bottom: 20px;
 }
 .home-container div button{
     width: 100%;
@@ -43,5 +47,26 @@
 }
 .btn-container:hover{
     background-position: left;
+}
+@media only screen and (max-width:800px){
 
+.home-container div h1{
+    font-size: 25px;
+
+}
+.home-container div h3{
+    font-size: 15px;
+}
+.home-container{
+    height: 50vh;
+}
+.home-container .home-items-container{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    margin-left: 0;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 5vw;
+}
 }

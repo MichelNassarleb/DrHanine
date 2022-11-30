@@ -36,7 +36,7 @@ export const HomeScreen = () => {
         
         </div>
         <Home title="WE USE LATEST MEDICAL TECHNOLOGY"
-        subtitle="LET US BRIGHTEN YOUR SMILE"
+        subtitle="LET US BRIGHTEN"
         buttonText="WHO WE ARE"
         />
         <HealthCare

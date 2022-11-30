@@ -2,6 +2,8 @@ export interface NavbarProps {
     data?: Array<{ href?: string, name?: string }>;
     onChangeDimension?:any;
     windowDimension?:number;
+    isOpened?:boolean;
+    onPress?:any;
 }
 
 export interface HomeProps{

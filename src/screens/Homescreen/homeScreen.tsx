@@ -14,15 +14,27 @@ export const HomeScreen = () => {
     const onClickMap= (lat:number,lng:number) =>{
         window.open("https://maps.google.com?q="+lat+","+lng);
       }
-
+    const [isOpened,setIsOpened] = useState<boolean>(false)
     const [fullName,setFullName] = useState<string>('')
     const [email,setEmail] = useState<string>('')
     const [message,setMessage] = useState<string>('')
     const [awards,setAwards] = useState<number>(0)
-    
+    const onMenuClick = () =>{
+        setIsOpened(prev=>!prev)
+    }
+    const dropdownlist = windowDimension ? 'dropdownlist smalldropdownlist' : 'dropdownlist'
+    const dropClass = isOpened ? dropdownlist : `${dropdownlist} zeroHeight`
     return <div className="main-container">
+        <div className="nav-bar">
+        <Navbar data={navData} windowDimension={windowDimension} onChangeDimension={setWindowDimension} isOpened={isOpened} onPress={onMenuClick}/>
+         <div className={dropClass}>
+        <ul className="homescreen-li-container">
+            {navData?.map((item,index)=><li key={index}><a href={item?.href} children={item?.name}/></li>)}
+        </ul>
+        </div> : null
+
         
-        <Navbar data={navData} windowDimension={windowDimension} onChangeDimension={setWindowDimension}/>
+        </div>
         <Home title="WE USE LATEST MEDICAL TECHNOLOGY"
         subtitle="LET US BRIGHTEN YOUR SMILE"
         buttonText="WHO WE ARE"

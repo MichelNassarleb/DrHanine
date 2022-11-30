@@ -4,8 +4,9 @@
     height: 100vh;
     background: url('../../assets//Images/homeBackground.jpeg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
+
 }
 
 .home-container div h1,h3{

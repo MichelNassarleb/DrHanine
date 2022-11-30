@@ -17,7 +17,7 @@
     gap: 8%;
     background-color: white;
     top: -10vh;
-    z-index: 2;
+    z-index:0;
     position: relative;
     box-shadow: 0px 5px 11px 4px rgba(156,141,141,0.35);
 -webkit-box-shadow: 0px 5px 11px 4px rgba(156,141,141,0.35);

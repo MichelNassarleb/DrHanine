@@ -1,6 +1,8 @@
 .main-container{
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    width: 100vw;
 }
 .nav-bar{
     position: fixed;

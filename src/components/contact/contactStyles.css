@@ -1,5 +1,5 @@
 .contact-container{
-    margin-top: 5vh;
+    margin-top: 2vh;
     display: flex;
     flex-direction: row;
     width: 100vw;
@@ -11,7 +11,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     padding-left: 10vw;
-    width: 50vw;
+    width: 40vw;
     gap: 10px;
 }
 .contact-email-container h3{
@@ -80,4 +80,17 @@ textarea{
 .contact-form button:hover{
     border: 1px solid var(--pink);
     background-color: var(--darkGrey);
+}
+@media only screen and (max-width:1000px){
+.contact-container{
+    flex-direction: column;
+}
+.contact-email-container{
+    width: 100vw;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.map-container{
+    width: 100vw;
+}
 }

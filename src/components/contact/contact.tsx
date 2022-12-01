@@ -8,11 +8,17 @@ export const Contact:FC<ContactProps> = (props) =>{
         lng:35.45244324086734
       };
 
-const containerStyle = {
+const containerStyle = props.windowWidth < 1001 ? {
+    width: '100vw',
+    height: '400px',
+    cursor:'pointer'
+  } : 
+  {
     width: '50vw',
     height: '400px',
     cursor:'pointer'
-  };
+  }
+
     return <div className="contact-container">
       <div className="map-container">
       <LoadScript

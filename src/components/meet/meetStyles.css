@@ -81,3 +81,14 @@ transition: 0.5s all ease;
 .meet-icon-container svg:hover{
     fill: var(--darkGrey);
 }
+@media only screen and (max-width:800px){
+.meet-top-section h3{
+    font-size: 15px;
+}
+.meet-top-section h1{
+    font-size: 19px;
+}
+.meet-sec{
+    width: 90vw;
+}
+}

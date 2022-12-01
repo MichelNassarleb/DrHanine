@@ -59,6 +59,7 @@ margin-bottom: 20px;
 }
 .home-container{
     height: 50vh;
+    margin-top: 50px;
 }
 .home-container .home-items-container{
     display: flex;

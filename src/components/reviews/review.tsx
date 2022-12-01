@@ -11,6 +11,7 @@ export const Review:FC<any> = (props) =>{
     },[])
 
 return (<div className="review-container">
+    <div className="first-two-review">
 <div className="review-item-container">
     <AddModeratorOutlinedIcon />
     <h1>{props?.awards < 34 ?`${props.awards}+` : `34+`}</h1>
@@ -23,6 +24,8 @@ return (<div className="review-container">
     <p>Awards Win</p>
     <div className="review-blue-line"></div>
 </div>
+</div>
+<div className="second-two-review">
 <div className="review-item-container">
     <AddModeratorOutlinedIcon />
     <h1>34+</h1>
@@ -34,6 +37,7 @@ return (<div className="review-container">
     <h1>34+</h1>
     <p>Awards Win</p>
     <div className="review-blue-line"></div>
+</div>
 </div>
 </div>)
 }

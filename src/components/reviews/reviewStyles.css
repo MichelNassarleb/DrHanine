@@ -6,6 +6,11 @@ padding:10px 10vw 10px 10vw;
     flex-direction: row;
     gap: 20px;justify-content: center;
 }
+.first-two-review,.second-two-review{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
 
 .review-item-container{
     background-color: var(--grey);
@@ -42,4 +47,33 @@ padding:10px 10vw 10px 10vw;
 }
 .review-item-container p{
     font-size: 30px;
+}
+@media only screen and (max-width:1000px){
+    .review-container{
+        padding: 10px 5vw 10px 5vw;
+        width: 90vw;
+    }
+    .first-two-review,.second-two-review{
+        flex-direction: column;
+
+    }
+    .review-item-container{
+        width: 180px;
+        height: 180px;
+    }
+    .review-item-container svg{
+        font-size: 50px;
+    }
+    .review-item-container h1{
+        font-size: 25px;
+    }
+    .review-item-container p{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:500px){
+    .review-item-container{
+        width: 120px;
+        height: 120px;
+    }
 }

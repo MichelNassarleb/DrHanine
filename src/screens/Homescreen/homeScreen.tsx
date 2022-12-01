@@ -24,6 +24,20 @@ export const HomeScreen = () => {
     }
     const dropdownlist = windowDimension ? 'dropdownlist smalldropdownlist' : 'dropdownlist'
     const dropClass = isOpened ? dropdownlist : `${dropdownlist} zeroHeight`
+
+    const [windowSize, setWindowSize] = useState<number>(0);
+    useEffect(() => {
+      function handleWindowResize() {
+        setWindowSize(window.innerWidth);
+      }
+  
+      window.addEventListener('resize', handleWindowResize);
+  
+      return () => {
+        window.removeEventListener('resize', handleWindowResize);
+      };
+    }, []);
+
     return <div className="main-container">
         <div className="nav-bar">
         <Navbar data={navData} windowDimension={windowDimension} onChangeDimension={setWindowDimension} isOpened={isOpened} onPress={onMenuClick}/>
@@ -56,6 +70,7 @@ export const HomeScreen = () => {
                  setFullName={setFullName}
                  setEmail={setEmail}
                  setMessage={setMessage}
+                 windowWidth={windowSize}
         />
     </div>
 } 

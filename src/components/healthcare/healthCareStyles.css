@@ -88,3 +88,46 @@
     font-size: 50px;
     font-weight: 100;
 }
+
+@media only screen and (max-width:1100px){
+    .square-items{
+       width: 80vw;
+    }
+}
+@media only screen and (max-width:800px){
+    .healthcare-title-container h3{
+        font-size: 15px;
+    }
+    .healthcare-title-container h1{
+        font-size: 19px;
+    }
+    .healthcare-icon-container svg{
+        font-size: 30px;
+    }
+    .side-container h1, .side-container p{
+        font-size: 12px;
+    }
+    .btn-container .contact-btn{
+        padding: 10px 23px 10px 23px;
+    }
+    .btn-container{
+        margin-bottom: 10px;
+    }
+    .square-items{
+        flex-direction: column;
+        top: -5vh;
+        width: 90vw;
+        padding: 0;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .healthcare-img-container{
+height: 200px;
+width: 150px;
+    }
+    .healthcare-data-container{
+        align-items: center;
+    }
+    .healthcare-under-title{
+       justify-content: center;}
+}

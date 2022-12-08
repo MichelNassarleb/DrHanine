@@ -10,8 +10,8 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    padding-left: 10vw;
-    width: 40vw;
+    padding-left: 2vw;
+    width: 48vw;
     gap: 10px;
 }
 .contact-email-container h3{

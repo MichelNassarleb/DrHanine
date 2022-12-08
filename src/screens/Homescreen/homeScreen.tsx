@@ -8,6 +8,7 @@ import { Navbar } from "../../components/navbar/navBar";
 import { Review } from "../../components/reviews/review";
 import { navData } from "../../data";
 import './homeScreenStyles.css'
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 export const HomeScreen = () => {
     const API_KEY = 'AIzaSyAgrRmCcvLHL1eSm555t8CmtfJOIsdWlr8'
     const [windowDimension,setWindowDimension] = useState<number>(1)
@@ -39,15 +40,16 @@ export const HomeScreen = () => {
     }, []);
 
     return <div className="main-container">
+      <a href='/About' className="whatsapp-icon">
+     <WhatsAppIcon />
+      </a>
         <div className="nav-bar">
         <Navbar data={navData} windowDimension={windowDimension} onChangeDimension={setWindowDimension} isOpened={isOpened} onPress={onMenuClick}/>
          <div className={dropClass}>
         <ul className="homescreen-li-container">
             {navData?.map((item,index)=><li key={index}><a href={item?.href} children={item?.name}/></li>)}
         </ul>
-        </div> : null
-
-        
+        </div>
         </div>
         <Home title="WE USE LATEST MEDICAL TECHNOLOGY"
         subtitle="LET US BRIGHTEN"

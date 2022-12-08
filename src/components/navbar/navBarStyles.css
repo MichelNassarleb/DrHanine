@@ -59,8 +59,8 @@ justify-content: space-between;
 .smallcontainer{
     height: 80px;
 }
-.a:hover, .a:focus {
-    color: var(--grey);
+.homescreen-li-container li a:hover, .a:focus {
+    color: var(--darkGrey);
     text-decoration: none;
     outline: 0;
     -webkit-transition: all 0.3s ease-in-out;
@@ -105,13 +105,13 @@ ul li{
     cursor: pointer;
 
 }
-ul li a:hover{
-    color: var(--darkGrey);
+.homescreen-li-container li a:hover{
+    color: var(--grey);
 }
-ul li a{
-    text-decoration: none;
+.homescreen-li-container li a{
     color: var(--grey);
     transition: all 0.5s ease;
+    text-decoration: none !important;
 }
 .menu-icon{
     display: none;

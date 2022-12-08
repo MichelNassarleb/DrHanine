@@ -24,10 +24,15 @@ padding:10px 10vw 10px 10vw;
     align-items: flex-start;
 }
 .review-item-container svg{
-    color: var(--pink);
+    color: var(--darkGrey);
     font-size: 100px;
+    transition: 0.5s all ease;
     margin: 0;
     padding: 0;
+    cursor: pointer;
+}
+.review-item-container svg:hover{
+    color: var(--pink);
 }
 .review-item-container h1,p{
     color: white;
@@ -64,6 +69,7 @@ padding:10px 10vw 10px 10vw;
     .review-item-container svg{
         font-size: 50px;
     }
+
     .review-item-container h1{
         font-size: 25px;
     }

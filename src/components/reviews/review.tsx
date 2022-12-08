@@ -7,7 +7,7 @@ export const Review:FC<any> = (props) =>{
     useEffect(()=>{
          setInterval(()=>{
                 props.setAwards((prev:any)=>prev+1)
-        },20)
+        },100)
     },[])
 
 return (<div className="review-container">
@@ -20,7 +20,7 @@ return (<div className="review-container">
 </div>
 <div className="review-item-container">
     <AddModeratorOutlinedIcon />
-    <h1>34+</h1>
+     <h1>{props?.awards < 34 ?`${props.awards}+` : `34+`}</h1>
     <p>Awards Win</p>
     <div className="review-blue-line"></div>
 </div>
@@ -28,13 +28,13 @@ return (<div className="review-container">
 <div className="second-two-review">
 <div className="review-item-container">
     <AddModeratorOutlinedIcon />
-    <h1>34+</h1>
+     <h1>{props?.awards < 34 ?`${props.awards}+` : `34+`}</h1>
     <p>Awards Win</p>
     <div className="review-blue-line"></div>
 </div>
 <div className="review-item-container">
     <AddModeratorOutlinedIcon />
-    <h1>34+</h1>
+     <h1>{props?.awards < 34 ?`${props.awards}+` : `34+`}</h1>
     <p>Awards Win</p>
     <div className="review-blue-line"></div>
 </div>

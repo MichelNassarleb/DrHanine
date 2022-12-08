@@ -111,7 +111,7 @@ ul li{
 .homescreen-li-container li a{
     color: var(--grey);
     transition: all 0.5s ease;
-    text-decoration: none !important;
+    text-decoration: none;
 }
 .menu-icon{
     display: none;

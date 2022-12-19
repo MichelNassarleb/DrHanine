@@ -59,7 +59,7 @@ justify-content: space-between;
 .smallcontainer{
     height: 80px;
 }
-.homescreen-li-container li a:hover, .a:focus {
+.li-container li a:hover, .a:focus {
     color: var(--darkGrey);
     text-decoration: none;
     outline: 0;
@@ -105,10 +105,10 @@ ul li{
     cursor: pointer;
 
 }
-.homescreen-li-container li a:hover{
-    color: var(--grey);
+.li-container li a:hover{
+    color: var(--darkGrey);
 }
-.homescreen-li-container li a{
+.li-container li a{
     color: var(--grey);
     transition: all 0.5s ease;
     text-decoration: none;

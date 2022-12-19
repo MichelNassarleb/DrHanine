@@ -58,6 +58,11 @@
 .homescreen-li-container li a{
     color: white;
     font-size: 15px;
+    text-decoration: none;
+    transition: 0.5s all ease;
+}
+.homescreen-li-container li a:hover{
+    color: var(--grey);
 }
 .homescreen-li-container li:nth-child(5){
     padding-bottom: 0px;

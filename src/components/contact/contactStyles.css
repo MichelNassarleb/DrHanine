@@ -65,7 +65,7 @@ textarea{
 .contact-form textarea::placeholder{
     color: white;
 }
-.contact-form button{
+.contact-form-button{
     padding: 10px 5px 10px 5px;
     width: 50%;
     border-width:0px;
@@ -77,10 +77,22 @@ textarea{
     background-color: var(--grey);
     border-color: transparent;
 }
-.contact-form button:hover{
+.btn-disabled{
+    padding: 10px 5px 10px 5px;
+    width: 50%;
+    border-width:0px;
+    border-radius:5px;
+    color: white;
+    font-size: 13px;
+    transition: 0.2s all ease;
+    background-color: var(--grey);
+    border-color: transparent;
+}
+.contact-form-button:hover{
     border: 1px solid var(--pink);
     background-color: var(--darkGrey);
 }
+
 @media only screen and (max-width:1000px){
 .contact-container{
     flex-direction: column;
@@ -93,4 +105,11 @@ textarea{
 .map-container{
     width: 100vw;
 }
+}
+.validationText{
+    color:rgb(242, 62, 62);
+    font-size: 10px;
+    margin: 0;
+    position: relative;
+    top:-5px;
 }

@@ -19,8 +19,8 @@
 .home-container .home-items-container{
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    justify-content:center;
+    height: 89vh;
+    justify-content:flex-end;
     align-items: flex-start;
     margin-left: 20vw;
 }
@@ -61,6 +61,7 @@ margin-bottom: 20px;
     height: 50vh;
 }
 .home-container .home-items-container{
+    border: 1px solid red;
     display: flex;
     flex-direction: column;
     height: 50vh;

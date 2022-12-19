@@ -31,7 +31,7 @@ export const HomeScreen = () => {
       function handleWindowResize() {
         setWindowSize(window.innerWidth);
       }
-  
+      handleWindowResize()
       window.addEventListener('resize', handleWindowResize);
   
       return () => {
@@ -73,6 +73,9 @@ export const HomeScreen = () => {
                  setEmail={setEmail}
                  setMessage={setMessage}
                  windowWidth={windowSize}
+                 email={email}
+                 message={message}
+                 fullname={fullName}
         />
     </div>
 } 

@@ -35,4 +35,7 @@ export interface ContactProps{
     setEmail?:any;
     setMessage?:any;
     windowWidth:number;
+    message?:string;
+    email:string;
+    fullname?:string
 }

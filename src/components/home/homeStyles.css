@@ -61,7 +61,6 @@ margin-bottom: 20px;
     height: 50vh;
 }
 .home-container .home-items-container{
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     height: 50vh;

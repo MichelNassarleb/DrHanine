@@ -22,7 +22,6 @@ export const Meet = () =>{
         <p>Dentist Expert</p>
         <div className="meet-icon-container">
         <FacebookIcon />
-        <TwitterIcon />
         <GoogleIcon />
         <InstagramIcon />
         </div>

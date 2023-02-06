@@ -21,9 +21,10 @@ export const Meet = () =>{
         <h1>Hanine Nassar</h1>
         <p>Dentist Expert</p>
         <div className="meet-icon-container">
-        <FacebookIcon />
+            <a href="https://www.facebook.com/drhaninenassar/"><FacebookIcon /></a>
+        <a href="https://www.instagram.com/drhaninenassar/?hl=en"><InstagramIcon /></a>
         <GoogleIcon />
-        <InstagramIcon />
+        
         </div>
         </div>
             </div>
